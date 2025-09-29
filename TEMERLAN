@@ -1,0 +1,37 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Programmer p1 = new Programmer();
+	    Designer d1 = new Designer();
+	    Taster t1 = new Taster();
+	    
+	    p1.work();
+	    d1.work();
+	    t1.work();
+	}
+}
+class Employee {
+    void work(){
+        System.out.println("");
+    }
+}
+class Programmer extends Employee {
+    void work(){
+        System.out.println("Программист пишет код. ");
+    }
+}
+class Designer extends Employee {
+    void work(){
+        System.out.println("Дизайнер рисует макет. ");
+    }
+}
+class Taster extends Employee {
+    void work(){
+        System.out.println("Тестировщик проверяет задачу. ");
+    }
+}
